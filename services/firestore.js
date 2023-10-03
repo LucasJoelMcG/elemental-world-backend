@@ -4,7 +4,7 @@ const serviceAccount = require('../configs/firebase-admin');
 fs.initializeApp({
   credential: fs.credential.cert(serviceAccount)
 });
-console.log(serviceAccount)
+
 const db = fs.firestore();
 
 const getOne = async (collection, document) => {
